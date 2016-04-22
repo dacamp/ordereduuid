@@ -28,7 +28,7 @@ type OrderedUUID struct {
 
 // UUID exports underlying pborman/uuid package
 func UUID() string {
-	return _uuid.New()
+	return _uuid.NewUUID().String()
 }
 
 // New returns a valid OrderedUUID
